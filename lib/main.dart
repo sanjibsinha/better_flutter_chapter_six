@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '/chapter_six/view/new_column_widget.dart';
+import '/chapter_six/test/test_category.dart';
 // import '/chapter_six/view/device_size.dart';
 
 main() {
@@ -19,7 +20,8 @@ main() {
   ); */
   runApp(
     // DeviceSize(),
-    MyApp(),
+    // MyApp(),
+    TestCategory(),
   );
 }
 
