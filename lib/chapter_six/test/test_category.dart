@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '/chapter_six/test/new_category_grid.dart';
 
 class TestCategory extends StatelessWidget {
   const TestCategory({Key? key}) : super(key: key);
@@ -34,27 +35,6 @@ class TCHomeMainBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView(
-      gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-        maxCrossAxisExtent: 200,
-        childAspectRatio: 3 / 2,
-        crossAxisSpacing: 20,
-        mainAxisSpacing: 20,
-      ),
-      children: [
-        Container(
-          padding: EdgeInsets.all(
-            20.0,
-          ),
-          child: Text('data'),
-        ),
-        Container(
-          padding: EdgeInsets.all(
-            20.0,
-          ),
-          child: Text('data'),
-        ),
-      ],
-    );
+    return NewCategoryGridWidget();
   }
 }
