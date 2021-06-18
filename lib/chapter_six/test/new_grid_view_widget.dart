@@ -1,9 +1,9 @@
-import 'package:better_flutter_chapter_six/chapter_six/test/dummy.dart';
-import 'package:better_flutter_chapter_six/chapter_six/test/test_category_item.dart';
 import 'package:flutter/material.dart';
+import '/chapter_six/test/dummy.dart';
+import '/chapter_six/test/test_category_item.dart';
 
-class NewCategoryGridWidget extends StatelessWidget {
-  const NewCategoryGridWidget({
+class NewGridViewWidget extends StatelessWidget {
+  const NewGridViewWidget({
     Key? key,
   }) : super(key: key);
 
@@ -17,7 +17,7 @@ class NewCategoryGridWidget extends StatelessWidget {
         mainAxisSpacing: 20,
       ),
       children: DUMMY_CATEGORIES.map((e) {
-        return TestCategoryItem(title: e.title, color: e.color);
+        return TestCategoryItem(id: e.id, title: e.title, color: e.color);
       }).toList(),
     );
   }

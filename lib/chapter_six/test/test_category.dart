@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '/chapter_six/test/new_category_grid.dart';
+import '/chapter_six/test/new_grid_view_widget.dart';
 
 class TestCategory extends StatelessWidget {
   const TestCategory({Key? key}) : super(key: key);
@@ -35,6 +35,6 @@ class TCHomeMainBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return NewCategoryGridWidget();
+    return NewGridViewWidget();
   }
 }

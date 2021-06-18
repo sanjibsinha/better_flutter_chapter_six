@@ -35,21 +35,21 @@ const DUMMY_CATEGORIES = const [
   Categories(
     id: 'c7',
     title: 'Wordpress',
-    color: Colors.green,
+    color: Colors.teal,
   ),
   Categories(
     id: 'c8',
     title: 'Django',
-    color: Colors.green,
+    color: Colors.pink,
   ),
   Categories(
     id: 'c9',
     title: 'Codeigniter',
-    color: Colors.green,
+    color: Colors.yellow,
   ),
   Categories(
     id: 'c10',
     title: 'Symphony',
-    color: Colors.green,
+    color: Colors.indigo,
   ),
 ];
