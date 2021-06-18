@@ -2,17 +2,23 @@ import 'package:flutter/material.dart';
 import '/chapter_six/test_category/category_books.dart';
 
 class TestCategoryItem extends StatelessWidget {
+  final String id;
   final String title;
   final Color color;
   const TestCategoryItem({
     Key? key,
+    required this.id,
     required this.title,
     required this.color,
   }) : super(key: key);
 
   void selectCategory(BuildContext context) {
     Navigator.push(context, MaterialPageRoute(builder: (_) {
-      return CategoryBooks();
+      return CategoryBooks(
+        id: id,
+        title: title,
+        color: color,
+      );
     }));
   }
 

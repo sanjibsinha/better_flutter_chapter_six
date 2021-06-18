@@ -1,13 +1,21 @@
 import 'package:flutter/material.dart';
 
 class CategoryBooks extends StatelessWidget {
-  const CategoryBooks({Key? key}) : super(key: key);
+  final String id;
+  final String title;
+  final Color color;
+  const CategoryBooks({
+    Key? key,
+    required this.id,
+    required this.title,
+    required this.color,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Categorywise Books Page'),
+        title: Text(title),
       ),
       body: Center(
         child: Container(
@@ -17,14 +25,14 @@ class CategoryBooks extends StatelessWidget {
           width: 300,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            color: Colors.purple,
+            color: color,
             border: Border.all(
               width: 5,
               color: Colors.grey,
             ),
           ),
           child: Text(
-            'Categorywise Books Page',
+            '$title Books',
             style: TextStyle(
               fontSize: 40.0,
               fontWeight: FontWeight.bold,

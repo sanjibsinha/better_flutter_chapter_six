@@ -46,7 +46,7 @@ class TCBody extends StatelessWidget {
         mainAxisSpacing: 20,
       ),
       children: DUMMY_CATEGORIES.map((e) {
-        return TestCategoryItem(title: e.title, color: e.color);
+        return TestCategoryItem(id: e.id, title: e.title, color: e.color);
       }).toList(),
     );
   }
