@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '/chapter_six/test_category/category_books.dart';
 
 class TestCategoryItem extends StatelessWidget {
   final String title;
@@ -36,22 +37,6 @@ class TestCategoryItem extends StatelessWidget {
               width: 5,
               color: Colors.black26,
             )),
-      ),
-    );
-  }
-}
-
-class CategoryBooks extends StatelessWidget {
-  const CategoryBooks({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Books'),
-      ),
-      body: Center(
-        child: Text('Books'),
       ),
     );
   }

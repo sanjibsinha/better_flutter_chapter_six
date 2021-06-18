@@ -1,6 +1,6 @@
-import 'package:better_flutter_chapter_six/chapter_six/test_category/dummy.dart';
-import 'package:better_flutter_chapter_six/chapter_six/test_category/test_category_item.dart';
 import 'package:flutter/material.dart';
+import '/chapter_six/test_category/dummy.dart';
+import '/chapter_six/test_category/test_category_item.dart';
 
 class TestCategory extends StatelessWidget {
   const TestCategory({Key? key}) : super(key: key);
@@ -26,6 +26,7 @@ class TCHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('All Books Category'),
+        backgroundColor: Colors.purpleAccent,
       ),
       body: TCBody(),
     );
