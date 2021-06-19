@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '/chapter_six/test_category/category_books.dart';
 
 class TestCategoryItem extends StatelessWidget {
   final String id;
@@ -13,13 +12,15 @@ class TestCategoryItem extends StatelessWidget {
   }) : super(key: key);
 
   void selectCategory(BuildContext context) {
-    Navigator.push(context, MaterialPageRoute(builder: (_) {
-      return CategoryBooks(
-        id: id,
-        title: title,
-        color: color,
-      );
-    }));
+    Navigator.pushNamed(
+      context,
+      'test',
+      arguments: {
+        'id': id,
+        'title': title,
+        'color': color,
+      },
+    );
   }
 
   @override

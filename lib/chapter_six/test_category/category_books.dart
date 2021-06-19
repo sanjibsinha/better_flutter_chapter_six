@@ -1,21 +1,26 @@
 import 'package:flutter/material.dart';
 
 class CategoryBooks extends StatelessWidget {
-  final String id;
+  /* final String id;
   final String title;
-  final Color color;
+  final Color color; */
   const CategoryBooks({
     Key? key,
-    required this.id,
+    /* required this.id,
     required this.title,
-    required this.color,
+    required this.color, */
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final routeArguments =
+        ModalRoute.of(context)!.settings.arguments as Map<String, String>;
+    final catId = routeArguments['id'];
+    final catTitle = routeArguments['title'];
+    final catColor = routeArguments['color'];
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: Text(catTitle!),
       ),
       body: Center(
         child: Container(
@@ -25,14 +30,14 @@ class CategoryBooks extends StatelessWidget {
           width: 300,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            color: color,
+            color: Colors.blue,
             border: Border.all(
               width: 5,
               color: Colors.grey,
             ),
           ),
           child: Text(
-            '$title Books',
+            '$catTitle Books',
             style: TextStyle(
               fontSize: 40.0,
               fontWeight: FontWeight.bold,

@@ -1,3 +1,4 @@
+import 'package:better_flutter_chapter_six/chapter_six/test_category/category_books.dart';
 import 'package:flutter/material.dart';
 import '/chapter_six/test_category/dummy.dart';
 import '/chapter_six/test_category/test_category_item.dart';
@@ -14,6 +15,9 @@ class TestCategory extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: TCHome(),
+      routes: {
+        '/test': (context) => CategoryBooks(),
+      },
     );
   }
 }
