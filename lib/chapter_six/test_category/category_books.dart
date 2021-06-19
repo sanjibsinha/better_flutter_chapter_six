@@ -13,8 +13,8 @@ class CategoryBooks extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final routeArguments =
-        ModalRoute.of(context)!.settings.arguments as Map<String, String>;
+    final Map routeArguments =
+        ModalRoute.of(context)!.settings.arguments as Map;
     final catId = routeArguments['id'];
     final catTitle = routeArguments['title'];
     final catColor = routeArguments['color'];
@@ -30,7 +30,7 @@ class CategoryBooks extends StatelessWidget {
           width: 300,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            color: Colors.blue,
+            color: catColor,
             border: Border.all(
               width: 5,
               color: Colors.grey,

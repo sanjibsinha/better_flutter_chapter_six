@@ -1,7 +1,7 @@
-import 'package:better_flutter_chapter_six/chapter_six/test_category/category_books.dart';
 import 'package:flutter/material.dart';
 import '/chapter_six/test_category/dummy.dart';
 import '/chapter_six/test_category/test_category_item.dart';
+import '/chapter_six/test_category/category_books.dart';
 
 class TestCategory extends StatelessWidget {
   const TestCategory({Key? key}) : super(key: key);
@@ -14,9 +14,10 @@ class TestCategory extends StatelessWidget {
         primarySwatch: Colors.red,
       ),
       debugShowCheckedModeBanner: false,
-      home: TCHome(),
+      initialRoute: '/',
       routes: {
-        '/test': (context) => CategoryBooks(),
+        '/': (context) => TCHome(),
+        '/category': (context) => CategoryBooks()
       },
     );
   }

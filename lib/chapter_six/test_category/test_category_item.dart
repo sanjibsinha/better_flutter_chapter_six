@@ -14,7 +14,7 @@ class TestCategoryItem extends StatelessWidget {
   void selectCategory(BuildContext context) {
     Navigator.pushNamed(
       context,
-      'test',
+      'category',
       arguments: {
         'id': id,
         'title': title,
